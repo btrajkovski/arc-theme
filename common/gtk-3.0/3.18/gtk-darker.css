@@ -1371,7 +1371,8 @@ column-header .button, column-header .button:hover, column-header .button:active
   .menubar > .menuitem {
     padding: 6px 8px;
     border: solid transparent;
-    border-width: 0; }
+    border-width: 0;
+    color: #ffffff; }
     .menubar > .menuitem:hover {
       background-color: #5294E2;
       color: #ffffff; }
@@ -1383,23 +1384,24 @@ column-header .button, column-header .button:hover, column-header .button:active
   margin: 4px;
   padding: 0;
   border-radius: 0;
-  background-color: #ffffff;
-  border: 1px solid #dcdfe3; }
+  background-color: #383C4A;
+  border: 1px solid #2b2e39; }
   .csd .menu {
     padding: 4px 0px;
     border-radius: 2px;
     border: none; }
   .menu .menuitem {
-    padding: 5px; }
+    padding: 5px;
+    color: #D3DAE3; }
     .menu .menuitem:hover {
-      color: #5c616c;
-      background-color: rgba(0, 0, 0, 0.04);
-      border: solid rgba(0, 0, 0, 0.08);
+      color: #D3DAE3;
+      background-color: rgba(255, 255, 255, 0.05);
+      border: solid rgba(255, 255, 255, 0.07);
       border-width: 1px 0 1px 0; }
     .menu .menuitem:insensitive {
-      color: rgba(92, 97, 108, 0.55); }
+      color: rgba(211, 218, 227, 0.45); }
     .menu .menuitem.separator {
-      color: rgba(255, 255, 255, 0); }
+      color: rgba(64, 69, 82, 0); }
     .menu .menuitem.arrow {
       -gtk-icon-source: -gtk-icontheme("pan-end-symbolic"); }
     .menu .menuitem.arrow:dir(rtl) {
@@ -1408,11 +1410,11 @@ column-header .button, column-header .button:hover, column-header .button:active
     border-style: none;
     border-radius: 0; }
     .menu.button.top {
-      border-bottom: 1px solid #efeff0; }
+      border-bottom: 1px solid #4f5461; }
     .menu.button.bottom {
-      border-top: 1px solid #efeff0; }
+      border-top: 1px solid #4f5461; }
     .menu.button:hover {
-      background-color: #efeff0; }
+      background-color: #4f5461; }
     .menu.button:insensitive {
       color: transparent;
       background-color: transparent;
