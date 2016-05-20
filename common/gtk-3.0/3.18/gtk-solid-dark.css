@@ -625,8 +625,9 @@ GtkSearchEntry.entry {
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover,
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:active,
 NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:checked,
-NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:insensitive, .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr),
-.linked > GtkComboBoxText > .the-button-in-the-combobox:dir(ltr) {
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:insensitive, .linked > GtkComboBox > .the-button-in-the-combobox:dir(ltr), .linked > GtkComboBox > .the-button-in-the-combobox:dir(rtl),
+.linked > GtkComboBoxText > .the-button-in-the-combobox:dir(ltr),
+.linked > GtkComboBoxText > .the-button-in-the-combobox:dir(rtl) {
   border-radius: 0;
   border-right-style: none; }
 
@@ -1366,7 +1367,7 @@ column-header .button, column-header .button:hover, column-header .button:active
   .menubar:backdrop {
     color: rgba(207, 218, 231, 0.5); }
   .menubar > .menuitem {
-    padding: 6px 8px;
+    padding: 4px 8px;
     border: solid transparent;
     border-width: 0; }
     .menubar > .menuitem:hover {
@@ -2319,7 +2320,7 @@ GtkInfoBar {
   color: #BAC3CF;
   border-radius: 2px; }
   .tooltip.background {
-    background-color: #353945;
+    background-color: #4b5162;
     background-clip: padding-box; }
   .tooltip.window-frame.csd {
     background-color: transparent; }
@@ -2513,7 +2514,7 @@ GtkVolumeButton.button {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45), 0 0 0 1px #22242d; }
   .window-frame.csd.tooltip {
     border-radius: 2px;
-    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.55); }
+    box-shadow: 0 1px 3px 1px rgba(0, 0, 0, 0.25); }
   .window-frame.csd.message-dialog {
     border-radius: 3px; }
   .window-frame.solid-csd {
@@ -2603,7 +2604,8 @@ GtkVolumeButton.button {
   .titlebar .button.titlebutton.minimize:active {
     background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2.png")); }
 
-.view:selected, .view:selected:focus, .view:selected:hover, .label:selected, .label:selected:focus, .label:selected:hover, .grid-child:selected, .menuitem.button.flat:active, .menuitem.sidebar-button.button:active, .menuitem.button.flat:selected, .menuitem.sidebar-button.button:selected, .list-row:selected, .sidebar:selected, .sidebar .view:selected, GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected:focus, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active,
+.view:selected, .view:selected:focus, .view:selected:hover, .label:selected, .label:selected:focus, .label:selected:hover, .grid-child:selected, .menuitem.button.flat:active, .menuitem.sidebar-button.button:active, .menuitem.button.flat:selected, .menuitem.sidebar-button.button:selected, .list-row:selected, .sidebar:selected, .sidebar .view:selected, GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkEntry.gb-command-bar-entry.entry.flat:selected,
+GtkEntry.gb-command-bar-entry.entry.flat:focus:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected, GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover, GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active,
 NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected,
 NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover,
 NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:selected,
@@ -2742,9 +2744,6 @@ NautilusQueryEditor .search-bar.toolbar, NautilusQueryEditor .search-bar.inline-
   .disk-space-display.free {
     background-color: #313541;
     border-color: #1b1d24; }
-
-NautilusListView .view {
-  border-bottom: 1px solid #2b2e39; }
 
 NemoWindow .sidebar .frame {
   border-width: 0; }
@@ -3083,7 +3082,9 @@ ClockBox {
   color: #BAC3CF; }
 
 .xfce4-panel.panel {
-  background-color: #2b2e37; }
+  background-color: #2b2e37;
+  text-shadow: none;
+  icon-shadow: none; }
   .xfce4-panel.panel .button.flat, .xfce4-panel.panel .sidebar-button.button {
     color: #BAC3CF;
     background-color: rgba(43, 46, 55, 0);
@@ -3277,6 +3278,87 @@ UnityPanelWidget,
   color: #ffffff;
   background-image: linear-gradient(to bottom, #5294E2);
   border-bottom: none; }
+
+.lightdm.menu {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  padding: 1px;
+  color: white; }
+
+.lightdm-combo .menu {
+  background-color: #404756;
+  border-radius: 0px;
+  padding: 0px;
+  color: white; }
+
+.lightdm.menu .menuitem *,
+.lightdm.menu .menuitem.check:active,
+.lightdm.menu .menuitem.radio:active {
+  color: white; }
+
+.lightdm.menubar {
+  color: rgba(255, 255, 255, 0.8);
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .lightdm.menubar > .menuitem {
+    padding: 2px 6px; }
+
+.lightdm-combo.combobox-entry .button,
+.lightdm-combo .cell,
+.lightdm-combo .button,
+.lightdm-combo .entry,
+.lightdm.button,
+.lightdm.entry {
+  background-image: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  padding: 7px;
+  color: white;
+  text-shadow: none; }
+
+.lightdm.button,
+.lightdm.button:hover,
+.lightdm.button:active,
+.lightdm.button:active:focused,
+.lightdm.entry,
+.lightdm.entry:hover,
+.lightdm.entry:active,
+.lightdm.entry:active:focused {
+  background-image: none;
+  border-image: none; }
+
+.lightdm.button:focused,
+.lightdm.entry:focused {
+  border-color: rgba(255, 255, 255, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  color: white; }
+
+.lightdm.entry:selected {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+.lightdm.entry:active {
+  -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+  animation: dashentry_spinner 1s infinite linear; }
+
+.lightdm.option-button {
+  padding: 2px;
+  background: none;
+  border: 0; }
+
+.lightdm.toggle-button {
+  background: none;
+  border-width: 0; }
+  .lightdm.toggle-button.selected {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-width: 1px; }
+
+@keyframes dashentry_spinner {
+  to {
+    -gtk-icon-transform: rotate(1turn); } }
 
 .overlay-bar {
   background-color: #5294E2;
@@ -3912,7 +3994,7 @@ MarlinViewWindow .source-list.sidebar.view .scrollbar .slider, GeditFileBrowserW
 @define-color selected_bg_color #5294E2;
 @define-color selected_fg_color #ffffff;
 @define-color insensitive_bg_color #3c4150;
-@define-color insensitive_fg_color alpha(#d3dae3,0.5);
+@define-color insensitive_fg_color alpha(#d3dae3, 0.5);
 @define-color insensitive_base_color #404552;
 @define-color theme_unfocused_fg_color #D3DAE3;
 @define-color theme_unfocused_text_color #D3DAE3;
@@ -3924,13 +4006,14 @@ MarlinViewWindow .source-list.sidebar.view .scrollbar .slider, GeditFileBrowserW
 @define-color error_color #FC4138;
 @define-color success_color #73d216;
 @define-color placeholder_text_color #A8A8A8;
+@define-color link_color #a9caf1;
 @define-color content_view_bg #404552;
-@define-color wm_title alpha(#cfdae7,0.8);
-@define-color wm_unfocused_title alpha(#cfdae7,0.5);
+@define-color wm_title alpha(#cfdae7, 0.8);
+@define-color wm_unfocused_title alpha(#cfdae7, 0.5);
 @define-color wm_bg #2f343f;
 @define-color wm_bg_unfocused #323843;
 @define-color wm_highlight #363b48;
-@define-color wm_shadow alpha(black,0.35);
+@define-color wm_shadow alpha(black, 0.35);
 @define-color wm_button_close_bg #cc575d;
 @define-color wm_button_close_hover_bg #d7787d;
 @define-color wm_button_close_active_bg #be3841;
