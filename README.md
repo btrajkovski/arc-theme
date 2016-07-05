@@ -1,3 +1,14 @@
+### Modified version of Arc-Darker theme.
+
+Main modification is using dark menu bar in Arc-Darker theme instead of default light one, for me it is Arc Darker is much more usable with this modification. Bellow you can find how arc darker looks with light and dark menu bar.
+
+Modified Arc Darker theme with dark menu bar
+![Modified Arc Darker](http://i.imgur.com/59HHREa.png Arc Darker Arc Darker)
+
+Original Arc Darker theme
+![Arc Darker](http://i.imgur.com/FsLdF2Q.png Arc Darker)
+
+
 # Arc Theme
 
 Arc is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell which supports GTK 3 and GTK 2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc.
