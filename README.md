@@ -1,6 +1,6 @@
 ### Modified version of Arc-Darker theme.
 
-Main modification is using dark menu bar in Arc-Darker theme instead of default light one, for me it is Arc Darker is much more usable with this modification. Bellow you can find how arc darker looks with light and dark menu bar.
+Main modification is using dark menu bar in Arc-Darker theme instead of default light one, for me Arc Darker theme is much more usable with this modification. Bellow you can find how arc darker looks with light and dark menu bar.
 
 Modified Arc Darker theme with dark menu bar
 ![Modified Arc Darker](http://i.imgur.com/59HHREa.png Arc Darker Arc Darker)
