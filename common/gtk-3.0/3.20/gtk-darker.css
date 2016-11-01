@@ -1485,7 +1485,8 @@ menubar,
   .menubar > menuitem {
     padding: 4px 8px;
     border: solid transparent;
-    border-width: 0; }
+    border-width: 0;
+    color: #ffffff; }
     menubar > menuitem:hover,
     .menubar > menuitem:hover {
       background-color: #5294e2;
@@ -1500,8 +1501,8 @@ menu,
   margin: 4px;
   padding: 0;
   border-radius: 0;
-  background-color: #ffffff;
-  border: 1px solid #dcdfe3; }
+  background-color: #383C4A;
+  border: 1px solid #2b2e39; }
   .csd menu, .csd
   .menu {
     padding: 4px 0px;
@@ -1513,13 +1514,13 @@ menu,
   .csd
   .menu separator {
     margin: 2px 0;
-    background-color: #ffffff; }
+    background-color: #383C4A; }
   menu .separator:not(label),
   .csd menu .separator:not(label),
   .menu .separator:not(label),
   .csd
   .menu .separator:not(label) {
-    color: #ffffff; }
+    color: #383C4A; }
   menu menuitem,
   .menu menuitem {
     min-height: 16px;
@@ -1531,7 +1532,7 @@ menu,
       background-color: #5294e2; }
     menu menuitem:disabled,
     .menu menuitem:disabled {
-      color: rgba(92, 97, 108, 0.55); }
+      color: rgba(211, 218, 227, 0.45); }
     menu menuitem arrow,
     .menu menuitem arrow {
       min-height: 16px;
@@ -1563,21 +1564,21 @@ menu,
     min-width: 16px;
     min-height: 16px;
     padding: 4px;
-    background-color: #ffffff;
+    background-color: #383C4A;
     border-radius: 0; }
     menu > arrow.top,
     .menu > arrow.top {
       margin-top: -6px;
-      border-bottom: 1px solid #efeff0;
+      border-bottom: 1px solid #4f5461;
       -gtk-icon-source: -gtk-icontheme("pan-up-symbolic"); }
     menu > arrow.bottom,
     .menu > arrow.bottom {
       margin-bottom: -6px;
-      border-top: 1px solid #efeff0;
+      border-top: 1px solid #4f5461;
       -gtk-icon-source: -gtk-icontheme("pan-down-symbolic"); }
     menu > arrow:hover,
     .menu > arrow:hover {
-      background-color: #efeff0; }
+      background-color: #4f5461; }
     menu > arrow:disabled,
     .menu > arrow:disabled {
       color: transparent;
