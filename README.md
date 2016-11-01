@@ -30,7 +30,7 @@ Arc is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell w
 
 ### Requirements
 
-* Gnome/GTK 3.14, 3.16, 3.18 or 3.20
+* Gnome/GTK3 3.14 - 3.22
 * The `gnome-themes-standard` package
 * The murrine engine. This has different names depending on your distro.
   * `gtk-engine-murrine` (Arch Linux)
@@ -42,11 +42,11 @@ Arc is a flat theme with transparent elements for GTK 3, GTK 2 and Gnome-Shell w
 Main distributions that meet these requirements are
 
 * Arch Linux and Arch Linux based distros
-* Ubuntu 15.04, 15.10 and 16.04 (**Ubuntu 14.04 and 14.10 are not supported**)
-* elementary OS Freya
+* Ubuntu 15.04 or newer (**Ubuntu 14.04 and 14.10 are not supported**)
+* elementary OS Freya/Loki
 * Debian 8, Testing or Unstable
 * Gentoo
-* Fedora 21 - 24
+* Fedora 21 or newer
 * openSUSE 13.2, Leap 42.1 and Tumbleweed
 
 Derivatives of these distributions should work, as well.
@@ -69,17 +69,23 @@ http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-
 A non-transparent version of the theme is available here  
 http://software.opensuse.org/download.html?project=home%3AHorst3180&package=arc-theme-solid  
 
-**Note:** elementary OS Freya users can install the package for Ubuntu 15.04
+**Note:** elementary OS Freya users can install the package for Ubuntu 15.04, Loki user can install the package for Ubuntu 16.04
 
 --
 
-Arch Linux users can install the theme from the AUR
+Arch Linux users can install the official releases directly from pacman in the Community repo and development releases in the AUR 
 
-**Official Releases**: https://aur.archlinux.org/packages/gtk-theme-arc/  
+**Official Releases**: [arc-gtk-theme](https://www.archlinux.org/packages/community/any/arc-gtk-theme/)
 
-**Development Releases**: https://aur.archlinux.org/packages/gtk-theme-arc-git/  
+**Development Releases (AUR)**: [gtk-theme-arc-git](https://aur.archlinux.org/packages/gtk-theme-arc-git/)
 
 **Note:** If you're having trouble with the AUR packages please email the package maintainer at zach@zach-adams.com before creating an issue.
+
+--
+
+Gentoo/Funtoo users can install `x11-themes/arc-theme` from the [Scriptkitties Overlay][sk-overlay].
+
+--
 
 #### Manual Installation
 
@@ -90,7 +96,7 @@ To build the theme you'll need
 * `libgtk-3-dev` for Debian based distros or `gtk3-devel` for RPM based distros
 * `git` if you want to clone the source directory
 
-If your distributions doesn't ship separate development packages you just need GTK 3 instead of the `-dev` packages.
+If your distribution doesn't ship separate development packages you just need GTK 3 instead of the `-dev` packages.
 
 Install the theme with the following commands
 
@@ -165,9 +171,15 @@ If you get artifacts like black or invisible backgrounds under Unity, disable ov
     gsettings set com.canonical.desktop.interface scrollbar-mode normal
 
 
-### Bug reporting
+### Bugs
 If you find a bug, please report it at https://github.com/horst3180/arc-theme/issues
+
+### License
+Arc is available under the terms the GPL-3.0. See `COPYING` for details.
 
 ### Full Preview
 ![A full screenshot of the Arc theme](http://i.imgur.com/tD1OBQ3.png)
 <sub>Screenshot Details: Icons: [Arc](https://github.com/horst3180/arc-icon-theme) | Launcher Icons based on [White Pixel Icons](http://darkdawg.deviantart.com/art/White-Pixel-Icons-252310560) | [Wallpaper](https://pixabay.com/photo-869593/) | Font: Futura Bk bt</sub>
+
+
+[sk-overlay]: https://c.darenet.org/scriptkitties/overlay
