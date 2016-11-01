@@ -1525,10 +1525,11 @@ menu,
   .menu menuitem {
     min-height: 16px;
     min-width: 40px;
+    color: #D3DAE3;
     padding: 5px; }
     menu menuitem:hover,
     .menu menuitem:hover {
-      color: #ffffff;
+      color: #D3DAE3;
       background-color: #5294e2; }
     menu menuitem:disabled,
     .menu menuitem:disabled {
